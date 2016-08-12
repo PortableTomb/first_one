@@ -1,14 +1,13 @@
-var monthsDays = [ ["January","March","May","July","August","October","December"],["June","September","November"] ];
+var monthsDays= [ ["January","March","May","July","August","October","December"],["June","September","November"] ];
 
 function daysInMonth(month){
 
-    for (var i = 0; i < months.length; i++) {
-        var monthsDays = monthsDays[i];
-            for(var j = 0; j < months.length; j++) {
+    for(var i = 0; i < monthsDays.length; i++) {
+        var month = monthsDays[i];
+            for(var j = 0; j < monthsDays.length; j++) {
         display("months[" + i + "][" + j + "] = " + months[j]);
-        
-    }
-        }
-}
 
+    }
+}
+}
 daysInMonth("January");
